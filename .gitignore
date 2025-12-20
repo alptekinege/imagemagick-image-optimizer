@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+venv/
+.Python
+build/
+dist/
+.eggs/
+*.egg-info/
+.pytest_cache
+
+# VS Code
+.vscode/
+
+# pytest
+.cache/
+
+# macOS
+.DS_Store
+
+# mypy
+.mypy_cache/
+
+# logs
+*.log
+
+# test files
+_test

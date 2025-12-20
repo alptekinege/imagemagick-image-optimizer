@@ -1,0 +1,20 @@
+[project]
+name = "imagemagick-image-optimizer"
+version = "0.1.0"
+description = "Resize images with ImageMagick while keeping original format."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "Apache-2.0" }
+authors = [ { name = "Alptekin" } ]
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
