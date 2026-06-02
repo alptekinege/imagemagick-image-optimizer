@@ -1,11 +1,14 @@
 [project]
 name = "imagemagick-image-optimizer"
-version = "0.1.0"
-description = "Resize images with ImageMagick while keeping original format."
+version = "0.2.0"
+description = "Resize and optimize images with ImageMagick."
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "Apache-2.0" }
 authors = [ { name = "Alptekin" } ]
+
+[project.scripts]
+img-optimize = "cli:main"
 
 [build-system]
 requires = ["setuptools>=42"]
