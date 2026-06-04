@@ -1,0 +1,3 @@
+## 2024-06-04 - Parallelize subprocess execution
+**Learning:** In a pure Python script that orchestrates external command line processes (like `magick` ImageMagick calls), doing `subprocess.run` sequentially in a loop is a significant performance bottleneck. IO bounds and external tool processing times dominate execution.
+**Action:** Use `concurrent.futures.ThreadPoolExecutor` to execute multiple `subprocess.run` processes in parallel, which greatly reduces total wait time without adding concurrency complexity, as the OS handles the actual multi-processing workload. Results from the threads can be safely collected into a stats dictionary sequentially using `executor.map`.
